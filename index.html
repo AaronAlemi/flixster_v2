@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css" />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/icon?family=Material+Icons"
+    />
+
+    <title>Flixster</title>
+</head>
+
+<body>
+    <h1>Flixster</h1>
+    <form id="form" method="GET">
+        <div>
+            <input type="text" id="search-input" name="keyword" placeholder="Enter movie here"> <button id="submit-button" type="submit" value="Find movies">Find movies</button> <button class="hidden" id="close-search-btn" value="reset">Reset Search</button>
+        </div>
+
+    </form>
+
+
+    <h3 id="now-playing-text">Now playing:</h3>
+
+    <h3 id="search-results-text" class="hidden">Search results:</h3>
+
+
+    <div class="grid-container" id="movies-grid"></div>
+
+    <button id="load-more-movies-btn" value="Load More">Show More</button>
+
+
+
+        <!-- The overlay -->
+    <div id="page-overlay" class="overlay">
+
+        <!-- Button to close the overlay navigation -->
+        <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+    
+        <!-- Overlay content -->
+        <div class="overlay-content" id="overlay-container">
+            
+        </div>
+    
+    </div>
+    
+    <!-- Use any element to open/show the overlay navigation menu -->
+    <span onclick="openNav()">open</span>
+
+    <!-- JAVASCRIPT LINK-->
+    <script src="script.js"></script>
+</body>
+
+</html>

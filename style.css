@@ -1,0 +1,147 @@
+body {
+    background-color: black;
+    text-align: center;
+    
+}
+
+h1 {
+    color: white;
+    font-size: 50px;
+    font-family:monospace
+}
+
+h2 {
+    color: white;
+}
+
+h3 {
+    color: white;
+    font-size: 40px;
+    font-family:monospace
+}
+
+p1 {
+    margin: 50px;
+    color: white;
+    font-size: 20px;
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+p3 {
+    color: black;
+    font-size: 20px;
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+form {
+    color: white;
+}
+
+#submit-button {
+    background-color: grey;
+    color:white;
+}
+button {
+    background-color: grey;
+    color: white;
+}
+
+.hidden {
+    display: none;
+}
+
+.grid-container {
+    display: grid;
+    grid-auto-flow: row;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: repeat(1, 1fr);
+    border-color: antiquewhite;
+    border-width: 5px;
+    grid-gap: 40px;
+    margin: 10px 40px 0px 40px;
+    align-items: center;
+    justify-content: center;
+    align-content: center;
+    size: auto;
+    
+  
+    
+}
+
+
+.movie-card {
+    
+}
+
+.movie-poster {
+    transition: 1s;
+}
+
+.movie-poster:hover {
+    transform:scale(1.1);
+}
+
+.movie-title {
+    color:white;
+}
+
+.movie-votes {
+    color: white;
+    font-size: 1.2em;
+}
+
+.material-icons {
+    color: yellow;
+    width: px !important;
+    height: px !important;
+    
+}
+
+.overlay {
+    /* Height & width depends on how you want to reveal the overlay (see JS below) */   
+    height: 100%;
+    width: 0;
+    position: fixed; /* Stay in place */
+    z-index: 1; /* Sit on top */
+    left: 0;
+    top: 0;
+    background-color: rgb(0,0,0); /* Black fallback color */
+    background-color: rgba(0,0,0, 0.9); /* Black w/opacity */
+    overflow-x: hidden; /* Disable horizontal scroll */
+    transition: 0.5s; /* 0.5 second transition effect to slide in or slide down the overlay (height or width, depending on reveal) */
+  }
+  
+/* Position the content inside the overlay */
+.overlay-content {
+    background-color: powderblue;
+    
+    position: relative;
+    top: 25%; /* 25% from the top */
+    width: 100%; /* 100% width */
+    text-align: center; /* Centered text/links */
+    margin-top: 30px; /* 30px top margin to avoid conflict with the close button on smaller screens */
+  }
+
+  .overlay .closebtn {
+    position: absolute;
+    top: 20px;
+    right: 45px;
+    font-size: 60px;
+    color: red;
+  }
+
+  .overlay-movie-backdrop {
+    margin-top: 30px;
+  }
+
+  .overlay-text-container {
+    margin-bottom: 20px;
+  }
+
+  .overlay-trailer {
+    margin-top: 30px;
+  }
+
+#gif-area {
+    align-items: baseline;
+}
